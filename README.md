@@ -44,3 +44,15 @@ Puede configurar los valores predeterminados de las siguientes variables para ca
 '$XDG_CONFIG_HOME ~/.config'
 '$XDG_DATA_HOME ~/.local/share'
 ```
+example
+r@HP:~/.config/lf$ tree
+.
+├── colors
+├── file
+├── history
+├── icons
+├── lfrc
+├── LICENSE
+├── marks
+├── README.md
+└── tags
