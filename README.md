@@ -1,4 +1,4 @@
-# lf
+# <div text-align: center > lf </dev>
 <p>Administrador de archivos de termina</p>
 <p>El código fuente se puede encontrar en el repositorio en https://github.com/gokcehan/lf</p>
 
