@@ -46,8 +46,8 @@ Puede configurar los valores predeterminados de las siguientes variables para ca
 ```
 example
 ```zsh
-ree [drive][path] [/F] [/A]
-      r@HP:~/.config/lf$ tree
+
+      $HOME/.config/lf$ tree
       .
       ├── colors
       ├── file
