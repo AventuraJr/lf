@@ -45,7 +45,7 @@ Puede configurar los valores predeterminados de las siguientes variables para ca
 '$XDG_DATA_HOME ~/.local/share'
 ```
 example
-
+```zsh
 ree [drive][path] [/F] [/A]
       r@HP:~/.config/lf$ tree
       .
@@ -58,3 +58,4 @@ ree [drive][path] [/F] [/A]
       ├── marks
       ├── README.md
       └── tags
+```
