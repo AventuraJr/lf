@@ -8,7 +8,8 @@
 > #### Configuracion 
 >
 > - Los archivos de configuración deben estar ubicados en.
-    ```Específico del usuario para todo el sistema operativo</p>
+    ```
+      Específico del usuario para todo el sistema operativo
        Unix '/etc/lf/lfrc ~/.config/lf/lfrc'
 
        El archivo de colores debe estar ubicado en:
