@@ -8,9 +8,9 @@
 > #### Configuracion 
 >
 > - Los archivos de configuración deben estar ubicado de archivo de configuracion del sistemas.      
-      ```bash
-            $ cd ~/.config/
-      ```
+```bash
+$ cd ~/.config/
+```
 Específico del usuario para todo el sistema operativo
 # Instruciones
 > :memo: **Nota** Clonar el repositorio con la jerarquia de configuracion previo
