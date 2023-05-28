@@ -11,7 +11,7 @@
 ```bash
 $ cd ~/.config/
 ```
-Específico del usuario para todo el sistema operativo
+
 # Instruciones
 > :memo: **Nota** Clonar el repositorio con la jerarquia de configuracion previo
 1. Ruta de directorio para clonar 
@@ -20,7 +20,7 @@ Específico del usuario para todo el sistema operativo
 $ cd ~/.config/
 ```
 
-2. Clear enlace simbolico suave
+2. Crear enlace simbolico suave
 example
 ```zsh
 
