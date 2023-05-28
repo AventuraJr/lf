@@ -7,8 +7,10 @@
 > :memo: **Note:** Esta configuracion solo esta enfocado para usuario Linux.
 > #### Configuracion 
 >
-> - Los archivos de configuración deben estar ubicados en.      
-      
+> - Los archivos de configuración deben estar ubicado de archivo de configuracion del sistemas.      
+      ```bash
+            $ cd ~/.config/
+      ```
 Específico del usuario para todo el sistema operativo
 # Instruciones
 > :memo: **Nota** Clonar el repositorio con la jerarquia de configuracion previo
