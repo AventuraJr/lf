@@ -10,40 +10,15 @@
 > - Los archivos de configuración deben estar ubicados en.      
       
 Específico del usuario para todo el sistema operativo
+# Instruciones
+> :memo: **Nota** Clonar el repositorio con la jerarquia de configuracion previo
+1. Ruta de directorio para clonar 
 
- ```bash
- Unix '/etc/lf/lfrc ~/.config/lf/lfrc'
- ```
-El archivo de colores debe estar ubicado en:
 ```bash
-Unix '/etc/lf/lfrc ~/.config/lf/lfrc'
-```
-El archivo de iconos debe estar ubicado en:
-```bash
-Unix '/etc/lf/icons ~/.config/lf/icons'
-```
-El archivo de selección debe estar ubicado en:
-```bash
-Unix '~/.local/share/lf/files'
-```
-El archivo de marcas debe estar ubicado en:
-```bash
-Unix '~/.local/share/lf/marks'
-```
-El archivo de etiquetas debe estar ubicado en:
-```bash
-Unix '~/.local/share/lf/tags'
+$ cd ~/.config/
 ```
 
- El archivo de historial debe estar ubicado en:
-```bash
-Unix '~/.local/share/lf/history' 
-```
-Puede configurar los valores predeterminados de las siguientes variables para cambiar estas ubicaciones:
-```bash
-'$XDG_CONFIG_HOME ~/.config'
-'$XDG_DATA_HOME ~/.local/share'
-```
+2. Clear enlace simbolico suave
 example
 ```zsh
 
@@ -58,4 +33,20 @@ example
       ├── marks
       ├── README.md
       └── tags
+```
+3. De esta forma crearemos los enlaces simbolico
+```bash
+$ ln -s /etc/lf/lfrc ~/.config/lf/lfrc
+$ ln -s /etc/lf/colors ~/.config/lf/colors
+$ ln -s /etc/lf/icons ~/.config/lf/icons
+$ ln -s ~/.local/share/lf/files
+$ ln -s ~/.local/share/lf/marks
+$ ln -s ~/.local/share/lf/tags
+$ ln -s ~/.local/share/lf/history
+
+```
+Puede configurar los valores predeterminados de las siguientes variables para cambiar estas ubicaciones:
+```bash
+'$XDG_CONFIG_HOME ~/.config'
+'$XDG_DATA_HOME ~/.local/share'
 ```
