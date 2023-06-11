@@ -1,7 +1,7 @@
 # lf
 ## Administrador de archivos en terminal
 
-El código fuente lo puedes encontrar en el repositorio en [lf](https://github.com/gokcehan/lf)
+El código fuente lo puedes encontrar en el repositorio de [lf](https://github.com/gokcehan/lf)
 
 **Nota:** Todo relacionado a este administrador de archivo de terminal lo puede encontrar en la pagina oficial, no es necesario reescribir todo la documentacion, por lo que solo me enfocare en las configuraciones para que puedas manipular y entre otras funciones que estare integrando en el archivo de configuracion.
 
@@ -13,16 +13,16 @@ El código fuente lo puedes encontrar en el repositorio en [lf](https://github.c
 $ cd ~/.config/
 ```
 
-# Instruciones
-> :memo: **Nota** Clonar el repositorio con la jerarquia de configuracion previo
-1. Ruta de directorio para clonar 
+## Instruciones
+> :memo: **Nota:** Clonar el repositorio con la jerarquia de archivo que te agrego.
+1. Ruta del directorio para clonar 
 
 ```bash
 $ cd ~/.config/
 ```
 
 2. Crear enlace simbolico suave
-example
+Ejemplo de los archivos que usaremos:
 ```zsh
 
       $HOME/.config/lf$ tree
