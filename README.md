@@ -3,12 +3,12 @@
 
 El código fuente lo puedes encontrar en el repositorio de [lf](https://github.com/gokcehan/lf)
 
-**Nota:** Todo relacionado a este administrador de archivo de terminal lo puede encontrar en la pagina oficial, no es necesario reescribir todo la documentacion, por lo que solo me enfocare en las configuraciones para que puedas manipular y entre otras funciones que estare integrando en el archivo de configuracion.
+**Nota:** Todo relacionado a este administrador de archivo en terminal lo puede encontrar en la pagina oficial, no es necesario reescribir todo la documentacion, por lo que solo me enfocare en las configuraciones basicas para manipular y entre otras funciones que estare integrando en el archivo de configuracion.
 
 > :memo: **Note:** Esta configuracion solo esta enfocado para usuario Linux.
 > #### Configuración 
 >
-> - Los archivos de configuración deben estar ubicado en el directorio de la instrucion para que funciones o puedes crear tu propia ruta siempre en tomar en cuenta las buenas practicas      
+> - Los archivos de configuración deben estar ubicado en el directorio de la instrucion para que funciones o puedes crear tu propia ruta siempre en tomar en cuenta la recomendación.
 ```bash
 $ cd ~/.config/
 ```
