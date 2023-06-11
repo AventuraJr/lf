@@ -1,0 +1,1 @@
+map i $~/.config/lf/pv.sh $f | less -R

@@ -39,7 +39,7 @@ Ejemplo de los archivos que usaremos:
 ```
 3. De esta forma crearemos los enlaces simbolico
 ```bash
-$ ln -s /etc/lf/lfrc ~/.config/lf/lfrc
+$ ln -s ~/.config/lf/lfrc ~/.lfrc
 $ ln -s /etc/lf/colors ~/.config/lf/colors
 $ ln -s /etc/lf/icons ~/.config/lf/icons
 $ ln -s ~/.local/share/lf/files
