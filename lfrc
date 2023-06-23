@@ -1,11 +1,9 @@
-# 1. Habilitar Bordes
-set drawbox
+# Basic Settings
+set drawbox true
 
-# 2. Modo de una sola columna de doble panel
-# set nopreview
-# set ratios 1
-# set info size:time
-set cursorpreviewfmt "\033[7m"
-
-# Previewing Files ¶
-set previewer ~/.config/lf/pv.sh
+cmd open &{{
+    case $(file --mime-type -Lb $f) in
+        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+    esac
+}}

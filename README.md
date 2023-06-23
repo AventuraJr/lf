@@ -1,4 +1,5 @@
 # lf
+> * :memo: **Agrege configuracion Nueva y elimine algunas cosas dejo de funcionar, notificare por aqui eliminando este mensaje**
 ## Administrador de archivos en terminal
 
 El código fuente lo puedes encontrar en el repositorio de [lf](https://github.com/gokcehan/lf)
