@@ -3,6 +3,7 @@
 ## Administrador de archivos en terminal
 
 **Repositorio de:** [lf](https://github.com/gokcehan/lf)
+
 **Tutorial Oficial:**[Config](https://github.com/gokcehan/lf/wiki/Tutorial)
 
 **Nota:** Todo relacionado a este administrador de archivo en terminal lo puede encontrar en la pagina oficial, no es necesario reescribir todo la documentacion, por lo que solo me enfocare en las configuraciones basicas para manipular y entre otras funciones que estare integrando en el archivo de configuracion.
