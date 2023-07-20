@@ -6,6 +6,11 @@
 
 **Tutorial OFICIAL:** [Config](https://github.com/gokcehan/lf/wiki/Tutorial)
 
+.
+├── **nerd-font** [Fonts](https://www.nerdfonts.com/)
+├── **Oh My Bash** [Script](https://ohmybash.nntoan.com/)
+├── **Icons** [Search](https://www.nerdfonts.com/cheat-sheet)
+
 **Nota:** Todo relacionado a este administrador de archivo en terminal lo puede encontrar en la pagina oficial, no es necesario reescribir todo la documentacion, por lo que solo me enfocare en las configuraciones basicas para manipular y entre otras funciones que estare integrando en el archivo de configuracion.
 
 > :memo: **Note:** Esta configuracion solo esta enfocado para usuario Linux.
