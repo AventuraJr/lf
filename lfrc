@@ -1,32 +1,95 @@
 # Basic Settings
-set drawbox true
-set icons
+#set drawbox true
+#set icons
 #set colors
 
 #set previewer ~/.config/lf/scope-lf-wrapper.sh
 #map i $LESSOPEN='| ~/.config/lf/scope-lf-wrapper.sh %s' less -R $f
-cmd open &{{
-    case $(file --mime-type -Lb $f) in
-        text/*) lf -remote "send $id \$$EDITOR \$fx";;
-        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
-    esac
-}}
+#cmd open &{{
+#    case $(file --mime-type -Lb $f) in
+#        text/*) lf -remote "send $id \$$EDITOR \$fx";;
+#        *) for f in $fx; do $OPENER $f > /dev/null 2> /dev/null & done;;
+#    esac
+#}}
 
 
 # Git
-cmd git_branch ${{
-    git branch | fzf | xargs git checkout
-    pwd_shell=$(pwd | sed 's/\\/\\\\/g;s/"/\\"/g')
-    lf -remote "send $id updir"
-    lf -remote "send $id cd \"$pwd_shell\""
-}}
-map gb :git_branch
-map gp ${{clear; git pull --rebase || true; echo "press ENTER"; read ENTER}}
-map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
-map gl ${{clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit}}
+#cmd git_branch ${{
+#    git branch | fzf | xargs git checkout
+#    pwd_shell=$(pwd | sed 's/\\/\\\\/g;s/"/\\"/g')
+#    lf -remote "send $id updir"
+#    lf -remote "send $id cd \"$pwd_shell\""
+#}}
+#map gb :git_branch
+#map gp ${{clear; git pull --rebase || true; echo "press ENTER"; read ENTER}}
+#map gs ${{clear; git status; echo "press ENTER"; read ENTER}}
+#map gl ${{clear; git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit}}
 
 #Ligando los directorios
-set previewer ~/.config/lf/previewer.sh
-set cleaner ~/.config/lf/clear_img.sh
+#set previewer ~/.config/lf/previewer.sh
+#set cleaner ~/.config/lf/clear_img.sh
 #set colors ~/.config/lf/colors
+
+
+# Basic vars
+#set icons
+set cleaner '~/.config/lf/cleaner'
+set previewer '~/.config/lf/scope'
+set drawbox
+set ignorecase true
+set icons
+set shell bash
+set promptfmt "\033[34;1m%d\033[0m\033[1m%f\033[0m"
+
+
+cmd open ${{
+  case $(file --mime-type $f -b) in
+    image/vnd.djvu|application/pdf|application/octet-stream) setsid -f mupdf $fx >/dev/null 2>&1 ;;
+    text/*) $EDITOR $fx;;
+    image/x-xcf|image/svg+xml) setsid -f gimp $f >/dev/null 2>&1 ;;
+    image/*) nsxiv $f | grep -i "\.\(png\|jpg\|jpeg\|gif\|webp\|tif\)\(_large\)*$" | sxiv -aio 2>/dev/null | lf-select ;;
+    audio/*) mpv --audio-display=no $f ;;
+    video/*) setsid -f mpv $f -quiet >/dev/null 2>&1 ;;
+    application/pdf|application/vnd*|application/epub*) setsid -f mupdf $fx >/dev/null 2>&1 ;;
+    *) for f in $fx; do setsid -f $OPENER $f >/dev/null 2>&1; done;;
+  esac
+}}
+
+cmd mkdir ${{
+	printf "Directory Name: "
+	read ans
+	mkdir $ans
+}}
+
+cmd mkfile ${{
+	printf "File Name: "
+	read ans
+	$EDITOR $ans
+}}
+
+cmd delete ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "delete?[y/N]"
+	read ans
+	[ $ans = "y" ] && rm -rf -- $fx
+}}
+
+#bindings
+map . set hidden!
+map p paste
+map x cut
+map y copy
+map <enter> open
+map A rename
+map r push A<a-b><a-b><a-f>
+map D delete
+
+map m
+map o
+map n
+map "'"
+map '"'
+map d
 
