@@ -14,10 +14,11 @@
 
 # Main options
 set icons
+set drawbox
 set period 1
-#set relativenumber
-#set number
-set hidden!
+set relativenumber
+set number
+#set hidden!
 set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/previewer'
