@@ -37,7 +37,7 @@ ln -s ~/.local/bin/lf /usr/bin/lf
 
 04. Descargar la configuracion desde github
 ```bash
-git clone git@github.com:ISEATO-JR/lf.git
+git clone git@github.com:ISEATO-JR/lf.git ~/.config
 ```
 Ejemplo de los archivos que usaremos:
 ```zsh
