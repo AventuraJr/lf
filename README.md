@@ -23,7 +23,8 @@ $ cd ~/.config/
 ```bash
 mkdir -p ~/.local/bin
 ```
-02. **Nota:** Descargar el binario LF. 
+02. **Nota:** Descargar el binario LF.
+
 **Tutorial OFICIAL:** [Config](https://github.com/gokcehan/lf/wiki/Tutorial)
 ```bash
 curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin
