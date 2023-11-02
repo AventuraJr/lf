@@ -3,9 +3,6 @@
 ## Administrador de archivos en terminal
 
 **Repositorio OFICIAL:**  [lf](https://github.com/gokcehan/lf)
-
-**Tutorial OFICIAL:** [Config](https://github.com/gokcehan/lf/wiki/Tutorial)
-
 .
 ├── **nerd-font** [Fonts](https://www.nerdfonts.com/)
 ├── **Oh My Bash** [Script](https://ohmybash.nntoan.com/)
@@ -27,19 +24,19 @@ $ cd ~/.config/
 mkdir -p ~/.local/bin
 ```
 02. **Nota:** Descargar el binario LF. 
-**Sitio Oficial** [Ir](https://github.com/gokcehan/lf/wiki/Tutorial)
+**Tutorial OFICIAL:** [Config](https://github.com/gokcehan/lf/wiki/Tutorial)
 ```bash
-      curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin
+curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin
 ```
 
 03. Crear enlace symbolico
 ```bash
-      ln -s ~/.local/bin/lf /usr/bin/lf
+ln -s ~/.local/bin/lf /usr/bin/lf
 ```
 
 04. Descargar la configuracion desde github
 ```bash
-      git clone git@github.com:ISEATO-JR/lf.git
+git clone git@github.com:ISEATO-JR/lf.git
 ```
 Ejemplo de los archivos que usaremos:
 ```zsh
@@ -56,7 +53,7 @@ Ejemplo de los archivos que usaremos:
 ```
 05.  Crear enlace symbolico de nuetra configuracion para poder usarlo desde la terminal.
 ```bash
-      ln -s ~/.config/lf/lfrc ~/.lfrc
+ln -s ~/.config/lf/lfrc ~/.lfrc
 ```
 Puede configurar los valores predeterminados de las siguientes variables para cambiar estas ubicaciones:
 ```bash
