@@ -1,5 +1,5 @@
 # lf
-> * :memo: **Agrege configuracion Nueva y elimine algunas cosas dejo de funcionar, notificare por aqui eliminando este mensaje**
+> * :memo: **Nueva configuracion**
 ## Administrador de archivos en terminal
 
 **Repositorio OFICIAL:**  [lf](https://github.com/gokcehan/lf)
@@ -22,41 +22,41 @@ $ cd ~/.config/
 ```
 
 ## Instruciones
-> :memo: **Nota:** Clonar el repositorio con la jerarquia de archivo que te agrego.
-1. Ruta del directorio para clonar 
-
+01. Crear directorio
 ```bash
-$ cd ~/.config/
+mkdir -p ~/.local/bin
+```
+02. **Nota:** Descargar el binario LF. 
+**Sitio Oficial** [Ir](https://github.com/gokcehan/lf/wiki/Tutorial)
+```bash
+      curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.tar.gz | tar xzC ~/.local/bin
 ```
 
-2. Crear enlace simbolico suave
+03. Crear enlace symbolico
+```bash
+      ln -s ~/.local/bin/lf /usr/bin/lf
+```
+
+04. Descargar la configuracion desde github
+```bash
+      git clone git@github.com:ISEATO-JR/lf.git
+```
 Ejemplo de los archivos que usaremos:
 ```zsh
 
-      $HOME/.config/lf$ tree
+      $HOME~/.config/lf$ tree
       .
-      ├── colors
-      ├── file
-      ├── history
+      ├── cleaner
       ├── icons
       ├── lfrc
       ├── LICENSE
-      ├── marks
-      ├── README.md
-      └── tags
+      ├── opener
+      ├── previewer
+      └── README.mds
 ```
-3. De esta forma crearemos los enlaces simbolico
+05.  Crear enlace symbolico de nuetra configuracion para poder usarlo desde la terminal.
 ```bash
-$ ln -s ~/.config/lf/lfrc ~/.lfrc
-$ ln -s /etc/lf/colors ~/.config/lf/colors
-$ ln -s /etc/lf/icons ~/.config/lf/icons
-$ ln -s ~/.local/share/lf/files
-$ ln -s ~/.local/share/lf/marks
-$ ln -s ~/.local/share/lf/tags
-$ ln -s ~/.local/share/lf/history
-$ set previewer ~/.config/lf/pv.sh
-$ map i $~/.config/lf/pv.sh $f | less -R
-
+      ln -s ~/.config/lf/lfrc ~/.lfrc
 ```
 Puede configurar los valores predeterminados de las siguientes variables para cambiar estas ubicaciones:
 ```bash
