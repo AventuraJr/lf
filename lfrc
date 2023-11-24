@@ -1,6 +1,6 @@
 # -> Test Dev
-#set previewer ~/.config/lf/pv.sh
-#map i $LESSOPEN='| ~/.config/lf/pv.sh %s' less -R $f
+# set previewer ~/.config/lf/pv.sh
+# map i $LESSOPEN='| ~/.config/lf/pv.sh %s' less -R $f
 
 # -> * Stable *
 # To get image previews, you need these 4 steps:
@@ -18,7 +18,7 @@ set drawbox
 set period 1
 set relativenumber
 set number
-#set hidden!
+# set hidden!
 set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/previewer'
@@ -47,7 +47,8 @@ set scrolloff 5
 set wrapscroll
 set shellopts '-eu'
 set ifs "\n"
-set shell "bash"
+# set shell "bash"
+set shell "zsh"
 set ruler 'df:acc:progress:selection:filter:ind'
 set cursorpreviewfmt "\033[7m"
 
