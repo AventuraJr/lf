@@ -18,7 +18,7 @@ set drawbox
 set period 1
 set relativenumber
 set number
-set hidden!
+#set hidden!
 set hiddenfiles ".*:*.aux:*.log:*.bbl:*.bcf:*.blg:*.run.xml"
 set cleaner '~/.config/lf/cleaner'
 set previewer '~/.config/lf/previewer'
@@ -77,6 +77,10 @@ cmd chmodx &{{
 }}
 
 
+alias nv="vim"
+alias nv="nvim"
+
+
 cmd shred ${{
 	# TODO:
 	# handle multiple files with shred or rshred
@@ -131,7 +135,13 @@ cmd moveto ${{
 			notify-send "lf" "🚚 Fichero(s) movidos a $dest"
 	fi
 }}
+# Abrir con el editor de texto 
+cmd edit-config ${{
+    $EDITOR ~/.config/lf/lfrc
+    lf -remote "send $id source ~/.config/lf/lfrc"
+}}
 
+map C edit-config
 
 cmd copyto ${{
 	clear; tput cup $(($(tput lines)/3)); tput bold
