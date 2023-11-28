@@ -52,7 +52,7 @@ set shell "zsh"
 set ruler 'df:acc:progress:selection:filter:ind'
 set cursorpreviewfmt "\033[7m"
 
-export EDITOR='nvim'
+#export EDITOR='nvim'
 
 source '~/.config/lf/opener'
 
