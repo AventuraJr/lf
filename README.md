@@ -54,7 +54,7 @@ Ejemplo de los archivos que usaremos:
 ```
 05.  Crear enlace symbolico de nuetra configuracion para poder usarlo desde la terminal.
 ```bash
-ln -s ~/.config/lf/lfrc ~/.lfrc
+sudo ln -s ~/.config/lf/lfrc ~/.lfrc
 ```
 Puede configurar los valores predeterminados de las siguientes variables para cambiar estas ubicaciones:
 ```bash
