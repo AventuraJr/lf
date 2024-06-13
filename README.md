@@ -37,7 +37,7 @@ sudo ln -s ~/.local/bin/lf /usr/bin/lf
 
 04. Descargar la configuracion desde github
 ```bash
-git clone git@github.com:ISEATO-JR/lf.git ~/.config
+git clone git@github.com:JulioRB9/lf.git ~/.config
 ```
 Ejemplo de los archivos que usaremos:
 ```zsh
