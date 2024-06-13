@@ -32,7 +32,7 @@ curl -L https://github.com/gokcehan/lf/releases/latest/download/lf-linux-amd64.t
 
 03. Crear enlace symbolico
 ```bash
-ln -s ~/.local/bin/lf /usr/bin/lf
+sudo ln -s ~/.local/bin/lf /usr/bin/lf
 ```
 
 04. Descargar la configuracion desde github
